@@ -1,0 +1,12 @@
+function fizzbuzz(number) {
+    let result = "";
+
+    if (number % 3 === 0) result += "Fizz";
+    if (number % 5 === 0) result += "Buzz";
+
+    return result || number;
+}
+
+for (let i = 1; i <= 100; i++) {
+    console.log(fizzbuzz(i));
+}
